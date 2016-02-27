@@ -7,8 +7,12 @@
 //
 
 #import "AppDelegate.h"
+#import "AOAMainViewController.h"
+
 
 @interface AppDelegate ()
+
+@property (strong, nonatomic) AOAMainViewController * mVC;
 
 @end
 
@@ -18,9 +22,20 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    
+    self.mVC = [[AOAMainViewController alloc] init];
+    UINavigationController * navVC = [[UINavigationController alloc] initWithRootViewController:self.mVC];
+    
+    self.window.rootViewController = navVC;
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
+}
+
+-(void) application:(UIApplication *)application
+handleEventsForBackgroundURLSession:(NSString *)identifier
+  completionHandler:(void (^)())completionHandler{
+    self.mVC.sessionCompletionHandler = completionHandler;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

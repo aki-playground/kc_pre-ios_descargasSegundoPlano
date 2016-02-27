@@ -11,6 +11,8 @@
 		AA190E2A1C8173AE00728949 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AA190E291C8173AE00728949 /* AppDelegate.m */; };
 		AA190E2C1C8173AE00728949 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA190E2B1C8173AE00728949 /* Assets.xcassets */; };
 		AA190E2F1C8173AE00728949 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA190E2D1C8173AE00728949 /* LaunchScreen.storyboard */; };
+		AA190E391C8173CF00728949 /* AOAMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA190E371C8173CF00728949 /* AOAMainViewController.m */; };
+		AA190E3A1C8173CF00728949 /* AOAMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA190E381C8173CF00728949 /* AOAMainViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +23,9 @@
 		AA190E2B1C8173AE00728949 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA190E2E1C8173AE00728949 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AA190E301C8173AE00728949 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA190E361C8173CF00728949 /* AOAMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AOAMainViewController.h; sourceTree = "<group>"; };
+		AA190E371C8173CF00728949 /* AOAMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AOAMainViewController.m; sourceTree = "<group>"; };
+		AA190E381C8173CF00728949 /* AOAMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AOAMainViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +64,9 @@
 				AA190E2D1C8173AE00728949 /* LaunchScreen.storyboard */,
 				AA190E301C8173AE00728949 /* Info.plist */,
 				AA190E251C8173AE00728949 /* Supporting Files */,
+				AA190E361C8173CF00728949 /* AOAMainViewController.h */,
+				AA190E371C8173CF00728949 /* AOAMainViewController.m */,
+				AA190E381C8173CF00728949 /* AOAMainViewController.xib */,
 			);
 			path = DescargasSegundoPlano;
 			sourceTree = "<group>";
@@ -129,6 +137,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA190E2C1C8173AE00728949 /* Assets.xcassets in Resources */,
+				AA190E3A1C8173CF00728949 /* AOAMainViewController.xib in Resources */,
 				AA190E2F1C8173AE00728949 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -140,6 +149,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA190E391C8173CF00728949 /* AOAMainViewController.m in Sources */,
 				AA190E2A1C8173AE00728949 /* AppDelegate.m in Sources */,
 				AA190E271C8173AE00728949 /* main.m in Sources */,
 			);
